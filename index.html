@@ -258,6 +258,14 @@
             overflow: hidden;
         }
 
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            z-index: 1;
+        }
+
         .card-image::before {
             content: '';
             position: absolute;
@@ -266,6 +274,7 @@
             right: 0;
             bottom: 0;
             background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+            z-index: 0;
         }
 
         .card-body {
@@ -457,13 +466,15 @@
             
             <div class="cards-grid">
                 <div class="card">
-                    <div class="card-image">🏔️</div>
+                    <div class="card-image">
+                        <img src="paquete-aventura.jpg" alt="Paquete Aventura Completa">
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">Aventura Completa</h3>
                         <p class="card-description">3 días y 2 noches explorando paisajes naturales, cultura local y gastronomía tradicional.</p>
                         <ul class="card-features">
-                            <li>Hospedaje en hotel céntrico </li>
-                            <li>alimentos incluidos</li>
+                            <li>Hospedaje en hotel céntrico</li>
+                            <li>Alimentos incluidos</li>
                             <li>Guía locales</li>
                             <li>Transporte incluido</li>
                         </ul>
@@ -473,7 +484,9 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-image">🌄</div>
+                    <div class="card-image">
+                        <img src="paquete-cultural.jpg" alt="Fin de Semana Cultural">
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">Fin de Semana Cultural</h3>
                         <p class="card-description">2 días descubriendo tradiciones, artesanías y sitios históricos de la región.</p>
@@ -481,7 +494,7 @@
                             <li>Alojamiento confortable</li>
                             <li>Desayunos incluidos</li>
                             <li>Tour por talleres artesanales</li>
-                            <li>Visita a sitios historicos</li>
+                            <li>Visita a sitios históricos</li>
                         </ul>
                         <p class="card-price">$4,200 MXN</p>
                         <a href="#" class="card-button">Reservar Ahora</a>
@@ -489,15 +502,17 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-image">🌺</div>
+                    <div class="card-image">
+                        <img src="paquete-premium.jpg" alt="Experiencia Premium">
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">Experiencia Premium</h3>
                         <p class="card-description">5 días de lujo con actividades exclusivas, gastronomía gourmet y atención personalizada.</p>
                         <ul class="card-features">
                             <li>Hotel 5 estrellas</li>
-                            <li>menú de alimentos a elegir</li>
+                            <li>Menú de alimentos a elegir</li>
                             <li>Actividades a la medida</li>
-                            <li>Transporte incluido en el municipios</li>
+                            <li>Transporte incluido en el municipio</li>
                         </ul>
                         <p class="card-price">$10,000 MXN</p>
                         <a href="#" class="card-button">Reservar Ahora</a>
@@ -513,14 +528,16 @@
             
             <div class="cards-grid">
                 <div class="card">
-                    <div class="card-image">🏨</div>
+                    <div class="card-image">
+                        <img src="hotel-centro.jpg" alt="Hotel Centro">
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">Hotel Centro</h3>
-                        <p class="card-description">paisajes increibles en el corazón de la ciudad. ambiente confortable en alojamiento cómodo.</p>
+                        <p class="card-description">Paisajes increíbles en el corazón de la ciudad. Ambiente confortable en alojamiento cómodo.</p>
                         <ul class="card-features">
                             <li>18 habitaciones únicas</li>
                             <li>Restaurante gourmet</li>
-                            <li>visita panorámica</li>
+                            <li>Visita panorámica</li>
                             <li>Wi-Fi gratuito</li>
                         </ul>
                         <p class="card-price">Desde $1,800/noche</p>
@@ -529,7 +546,9 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-image">🏡</div>
+                    <div class="card-image">
+                        <img src="cabanas-naturaleza.jpg" alt="Cabañas en la Naturaleza">
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">Cabañas en la Naturaleza</h3>
                         <p class="card-description">Retiro ecológico rodeado de bosques. Perfecto para desconectar y renovar energías.</p>
@@ -543,6 +562,8 @@
                         <a href="#" class="card-button">Ver Disponibilidad</a>
                     </div>
                 </div>
+            </div>
+        </div>
 
         <!-- Recorridos Guiados -->
         <div id="recorridos" class="tab-content">
@@ -551,7 +572,9 @@
             
             <div class="cards-grid">
                 <div class="card">
-                    <div class="card-image">🗺️</div>
+                    <div class="card-image">
+                        <img src="tour-historico.jpg" alt="Tour Histórico">
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">Tour Histórico</h3>
                         <p class="card-description">Recorrido de 4 horas por los sitios más emblemáticos. Conoce la historia y leyendas locales.</p>
@@ -567,7 +590,9 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-image">🚶</div>
+                    <div class="card-image">
+                        <img src="senderismo-ecologico.jpg" alt="Senderismo Ecológico">
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">Senderismo Ecológico</h3>
                         <p class="card-description">Caminata de 4 horas por rutas naturales. Observación de flora y fauna endémica.</p>
@@ -581,10 +606,12 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-image">🍷</div>
+                    <div class="card-image">
+                        <img src="ruta-cultural.jpg" alt="Ruta Cultural">
+                    </div>
                     <div class="card-body">
-                        <h3 class="card-title">Ruta cultural</h3>
-                        <p class="card-description">4 horas recorrido en el centro historico y degustancion de lo mejor de la cocina local. Visita la casa del artesano, talleres artesanales.</p>
+                        <h3 class="card-title">Ruta Cultural</h3>
+                        <p class="card-description">4 horas recorrido en el centro histórico y degustación de lo mejor de la cocina local. Visita la casa del artesano, talleres artesanales.</p>
                         <ul class="card-features">
                             <li>Cocineras locales</li>
                             <li>3 degustaciones incluidas</li>
@@ -605,10 +632,12 @@
             
             <div class="cards-grid">
                 <div class="card">
-                    <div class="card-image">🏺</div>
+                    <div class="card-image">
+                        <img src="dulces-tradicionales.jpg" alt="Dulces Tradicionales">
+                    </div>
                     <div class="card-body">
-                        <h3 class="card-title">dulces tradicionales </h3>
-                        <p class="card-description">artesanías locales. Cada obra cuenta una historia.</p>
+                        <h3 class="card-title">Dulces Tradicionales</h3>
+                        <p class="card-description">Artesanías locales. Cada obra cuenta una historia.</p>
                         <ul class="card-features">
                             <li>Hecho a mano</li>
                             <li>Apoyo directo al artesano</li>
@@ -619,7 +648,9 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-image">🧵</div>
+                    <div class="card-image">
+                        <img src="textiles-bordados.jpg" alt="Textiles Bordados">
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">Textiles Bordados</h3>
                         <p class="card-description">Bordados tradicionales con diseños que representan la cosmovisión local. Arte portable.</p>
@@ -635,10 +666,12 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-image">🌿</div>
+                    <div class="card-image">
+                        <img src="productos-naturales.jpg" alt="Productos Naturales">
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">Productos Naturales</h3>
-                        <p class="card-description">Artesanías elaboradas con fibras naturales y dulcesa tipicos. Belleza sostenible.</p>
+                        <p class="card-description">Artesanías elaboradas con fibras naturales y dulces típicos. Belleza sostenible.</p>
                         <ul class="card-features">
                             <li>Materiales renovables</li>
                             <li>Proceso ecológico</li>
@@ -659,7 +692,9 @@
             
             <div class="cards-grid">
                 <div class="card">
-                    <div class="card-image">🍽️</div>
+                    <div class="card-image">
+                        <img src="restaurante-mesa-pueblo.jpg" alt="La Mesa del Pueblo">
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">La Mesa del Pueblo</h3>
                         <p class="card-description">Cocina tradicional con ingredientes de la región. Recetas transmitidas por generaciones.</p>
@@ -675,7 +710,9 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-image">🌮</div>
+                    <div class="card-image">
+                        <img src="restaurante-sabores-tierra.jpg" alt="Sabores de la Tierra">
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">Sabores de la Tierra</h3>
                         <p class="card-description">Street food elevado. Sabores callejeros con presentación gourmet y técnicas contemporáneas.</p>
@@ -691,13 +728,15 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-image">⭐</div>
+                    <div class="card-image">
+                        <img src="restaurante-jardin-secreto.jpg" alt="El Jardín Secreto">
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">El Jardín Secreto</h3>
                         <p class="card-description">Alta cocina en jardín histórico.</p>
                         <ul class="card-features">
                             <li>Menú degustación</li>
-                            <li>bebida típica </li>
+                            <li>Bebida típica</li>
                         </ul>
                         <p class="card-price">$850-1,200/persona</p>
                         <a href="#" class="card-button">Hacer Reservación</a>
@@ -725,7 +764,7 @@
                 <div class="impact-card">
                     <div class="impact-icon">🎓</div>
                     <div class="impact-number">350</div>
-                    <div class="impact-label">alumno informados</div>
+                    <div class="impact-label">Alumnos Informados</div>
                 </div>
                 <div class="impact-card">
                     <div class="impact-icon">♻️</div>
@@ -736,21 +775,25 @@
 
             <div class="cards-grid" style="margin-top: 3rem;">
                 <div class="card">
-                    <div class="card-image">🤝</div>
+                    <div class="card-image">
+                        <img src="turismo-responsable.jpg" alt="Turismo Responsable">
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">Turismo Responsable</h3>
-                        <p class="card-description">Realizamos dibulgacion ambienta a las nuevas generaciones del municipio sobre el cuidado y contribucion al beneficio del patrimonio geologico, natural y cultural.</p>
+                        <p class="card-description">Realizamos divulgación ambiental a las nuevas generaciones del municipio sobre el cuidado y contribución al beneficio del patrimonio geológico, natural y cultural.</p>
                         <ul class="card-features">
-                            <li>talleres a escuelas, secundarias y prepas locales</li>
+                            <li>Talleres a escuelas, secundarias y prepas locales</li>
                             <li>Talleres de oficios tradicionales</li>
-                            <li>Educacion ambiental</li>
+                            <li>Educación ambiental</li>
                             <li>Conservación de patrimonio</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card-image">🌍</div>
+                    <div class="card-image">
+                        <img src="compromiso-ambiental.jpg" alt="Compromiso Ambiental">
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">Compromiso Ambiental</h3>
                         <p class="card-description">Operamos bajo principios de turismo sostenible, minimizando nuestra huella ecológica y promoviendo prácticas responsables.</p>
@@ -764,7 +807,9 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-image">💚</div>
+                    <div class="card-image">
+                        <img src="empoderamiento-local.jpg" alt="Empoderamiento Local">
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">Empoderamiento Local</h3>
                         <p class="card-description">Trabajamos exclusivamente con proveedores locales, artesanos y guías de la comunidad, asegurando un impacto económico directo.</p>
